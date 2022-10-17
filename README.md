@@ -36,8 +36,8 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: [Github link](https://github.com/ElegantGracie/ping-coming-soon-page-master)
+- Live Site URL: [Live link](https://elegantgracie.github.io/ping-coming-soon-page-master/)
 
 ## My process
 
@@ -50,7 +50,7 @@ Users should be able to:
 
 ### What I learned
 
-I learnt more about password validation 
+I learnt more about email validation 
 ```js
   const emailMatch = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(('email').value);
   if(emailMatch) {
@@ -102,8 +102,8 @@ Going further I would continue working on my form validation codes.
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/ElegantGracie)
-- Twitter - [@yourusername](https://www.twitter.com/Elegant_Gracie_)
+- Frontend Mentor - [@ElegantGracie](https://www.frontendmentor.io/profile/ElegantGracie)
+- Twitter - [@Elegant_Gracie_](https://www.twitter.com/Elegant_Gracie_)
 
 ## Acknowledgments
 
