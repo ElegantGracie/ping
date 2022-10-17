@@ -1,0 +1,155 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Franklin:wght@300;400;700&display=swap');
+:root {
+    --blue: hsl(223, 87%, 63%);
+    --paleBlue: hsl(223, 100%, 88%);
+    --lightRed: hsl(354, 100%, 66%);
+    --gray: hsl(0, 0%, 59%);
+    --veryDarkBlue: hsl(209, 33%, 12%);
+    --font: 20px;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.container {
+   padding: 3rem auto 0; 
+   text-align: center;
+   width: 100%;
+   font-family: 'Libre Franklin', sans-serif;
+}
+.logo {
+    margin: 2rem auto;
+    width: 4rem;
+}
+.logo img {
+    width: 100%;
+}
+h2 {
+    margin: 1rem auto;
+    color: var(--veryDarkBlue);
+    font-weight: 700;
+}
+h2 span {
+    color: var(--gray);
+    font-weight: normal;
+}
+p.notify {
+    color: var(--veryDarkBlue);
+}
+p:not([class='attribution']) {
+    margin: 1rem  auto;
+}
+form {
+    margin: 2rem auto;
+}
+form input,
+form button {
+    width: 18rem;
+    display: block;
+    margin: 1rem auto;
+    padding: 1rem;
+    border-radius: 2rem;
+    font-size: 1rem;
+}
+form input {
+    border: 1px solid var(--paleBlue);
+}
+form input::placeholder {
+    color: var(--gray);
+    font-weight: 300;
+}
+#error {
+    color: var(--lightRed);
+}
+form button {
+    background-color: var(--blue);
+    color: #fff;
+    border: none;
+}
+.hero-image {
+    width: 20rem;
+    margin: 2rem auto;
+}
+.hero-image img {
+    width: 100%;
+}
+.icons {
+    margin: 5rem auto 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon a {
+    margin: 0.5rem;  
+    color: var(--blue);
+    width: 2rem;
+    height: 2rem;
+    border: 0.5px solid var(--gray);
+    border-radius: 50%;
+    padding: 2rem auto;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+p:nth-of-type(2) {
+    color: var(--gray);
+    font-size: small;
+}
+.attribution { 
+    font-size: small; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+
+/* bigger screens */
+@media (min-width: 768px) {
+    h2 {
+        font-size: 2rem;
+        letter-spacing: 0.1rem;
+    }
+    .notify {
+        font-size: 1.3rem;
+    }
+    form {
+        margin: unset;
+    }
+    .flexed {
+        display: flex;
+        justify-content: space-evenly;
+        margin: 0 auto 1rem;
+        width: 30rem;
+        font-size: 1.1rem;
+    }
+    div.flexed div#in-err {
+        flex-basis: 60%;
+        margin: 0 1rem;
+    }
+    div#in-err input {
+        width: 20rem;
+    }
+    form button {
+        flex-basis: 30%;
+        height: 3rem;
+    }
+    form button:hover {
+        cursor: pointer;
+        opacity: 0.7;
+    }
+    .hero-image {
+        width: 30rem;
+    }
+    .icon a:hover {
+        background-color: var(--blue);
+        color: #fff;
+    }
+    p:nth-of-type(2) {
+        font-size: medium;
+    }
+    .attribution {
+        font-size: 0.8rem;
+    }
+}

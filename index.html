@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <!-- Stylesheet -->
+  <link rel="stylesheet" href="./assets/style/style.css">
+
+  <!-- Icons from Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  
+  <title>Frontend Mentor | Ping coming soon page</title>
+
+</head>
+<body>
+  <div class="container">
+    <div class="logo">
+      <img src="./assets/images/logo.svg" alt="Ping's logo">
+    </div>
+  
+    <h2><span>We are launching</span> soon!</h2>
+  
+    <p class="notify">Subscribe and get notified</p>
+  
+    <form action="" method="post">
+      
+      <div class="flexed">
+        <div id="in-err">
+          <input type="text" id="email" placeholder="Your email address...">
+    
+          <p id="error"></p>
+        </div>
+  
+        <button type="button" onclick="errorMessage()">Notify Me</button>
+      </div>
+  
+    </form>
+  
+    <div class="hero-image">
+      <img src="./assets/images/illustration-dashboard.png" alt="">
+    </div>
+  
+    <div class="icons">
+  
+      <div class="icon">
+        <a href="#"><i class="fa-brands fa-facebook-f icon"></i></a>
+      </div>
+  
+      <div class="icon">
+        <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      </div>
+  
+      <div class="icon">
+        <a href="#"><i class="fa-brands fa-instagram"></i></a>
+      </div>
+  
+    </div>
+  
+    <p>&copy; Copyright Ping. All rights reserved.</p>
+  
+    <footer>
+      <p class="attribution">
+        Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+        Coded by <a href="#">Nwafor Grace</a>.
+      </p>
+    </footer>
+  </div>
+
+  <script type="text/javascript">
+    const errorMessage = () => {
+      const email = document.getElementById("email");
+      const error = document.getElementById("error");
+      const emailMatch = /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(('email').value);
+      if (email.value === "")
+      {  
+          // Placing error message and changing border color of input
+          return error.innerText = "Whoops! It looks like you forgot to add your email";
+                email.style.border = "1px solid hsl(354, 100%, 66%)";
+      } else if(emailMatch) {
+          return error.innerText = ""
+      } else {
+          return error.innerText = "Please provide a valid email address";
+          email.style.border = "1px solid hsl(354, 100%, 66%)"
+      }
+    }
+  </script>
+</body>
+</html>
