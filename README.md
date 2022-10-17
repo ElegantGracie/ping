@@ -64,7 +64,7 @@ Rediscovered that a link tag could have a border. This was when I was trying to 
     </div>
 ```
 ```css
-  The previous style for the above mentioned HTML was - 
+  /* The previous style for the above mentioned HTML was */
   .icon {
     margin: 0.5rem;  
     color: var(--blue);
@@ -76,7 +76,7 @@ Rediscovered that a link tag could have a border. This was when I was trying to 
     padding: 0.4rem;
   }
   
-  Then the stlye I used was - 
+  /* Then the stlye I used was */
   .icon a {
     margin: 0.5rem;  
     color: var(--blue);
